@@ -87,13 +87,14 @@ function initContactForm() {
 }
 
 function initSocials() {
-  const links = [
-    { href: SITE.github, icon: "github", title: "GitHub" },
-    { href: SITE.linkedin, icon: "linkedin", title: "LinkedIn" },
-  ].filter((link) => link.href);
-
   document.querySelectorAll("[data-socials]").forEach((container) => {
-    container.replaceChildren();
+    if (container.children.length) return;
+
+    const links = [
+      { href: SITE.github, icon: "github", title: "GitHub" },
+      { href: SITE.linkedin, icon: "linkedin", title: "LinkedIn" },
+    ].filter((link) => link.href);
+
     links.forEach((link) => {
       const anchor = document.createElement("a");
       anchor.href = link.href;
@@ -108,6 +109,7 @@ function initSocials() {
 
 function initSocialIconButtons() {
   document.querySelectorAll("[data-social-icon]").forEach((button) => {
+    if (button.innerHTML.trim()) return;
     const icon = SOCIAL_ICONS[button.dataset.socialIcon];
     if (icon) button.innerHTML = icon;
   });
