@@ -312,9 +312,24 @@ a { color: inherit; }
   place-items: center;
   text-decoration: none;
   background: var(--bg-elevated);
-  font-size: 0.78rem;
-  font-weight: 600;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  color: var(--text);
+  transition: border-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.socials a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-icon {
+  justify-content: center;
+  min-width: 44px;
+  padding-inline: 14px;
+}
+
+.btn-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .socials a:hover {
