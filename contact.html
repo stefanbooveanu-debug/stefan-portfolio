@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Booveanu Stefan — ask about projects, collaboration, freelance work, or anything else." />
+  <title>Contact — Booveanu Stefan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">S</div>
+        <span>Booveanu Stefan</span>
+      </a>
+      <ul class="nav" id="siteNav">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+        <li><a href="portfolio.html" data-page="portfolio">Works</a></li>
+        <li><a href="contact.html" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <button class="btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu">Menu</button>
+        <button class="btn" id="themeToggle" type="button">Change appearance</button>
+        <a class="btn btn-primary" href="contact.html">Let's Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="layout-two" style="padding-top:48px;">
+      <aside class="card profile-card">
+        <img class="profile-photo" src="assets/img/profile.png" alt="Booveanu Stefan — professional portrait" />
+        <h1>Booveanu Stefan 👋</h1>
+        <p class="role">Software Developer | Flutter & Web Specialist</p>
+        <p class="bio">Building practical apps that solve real problems for businesses and everyday users.</p>
+        <ul class="badges">
+          <li>🎓 Finished Class IX · Liceul Teoretic "Grigore Moisil" · Timișoara</li>
+          <li>💼 Full-stack Developer @ Cezieni SRL</li>
+          <li>🚀 HackTM — Grim Dropper</li>
+        </ul>
+        <nav class="profile-actions" aria-label="Primary actions">
+          <a class="btn" href="portfolio.html">View Projects</a>
+          <button class="btn" type="button" data-copy-email data-email-display>stefanbooveanu@gmail.com</button>
+        </nav>
+        <nav class="socials" data-socials aria-label="Social media links"></nav>
+      </aside>
+
+      <section class="card main-panel">
+        <h2 class="section-title">Let's 👋 work together</h2>
+        <p style="color:var(--text-muted);max-width:58ch;margin-bottom:22px;">Whether you want to collaborate on a project, discuss freelance work, explore an internship, or ask a question about anything — send a message below.</p>
+
+        <div class="inline-actions">
+          <button class="btn btn-primary" type="button" data-copy-email>Copy Email</button>
+          <a class="btn" href="portfolio.html">View Projects</a>
+        </div>
+
+        <form id="contact-form" style="margin-top:28px;" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label>Don't fill this out if you're human<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <div class="row">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Enter your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Enter your email" required />
+            </label>
+          </div>
+
+          <label>
+            What would you like to ask about?
+            <select name="topic" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="General question">General question</option>
+              <option value="Project collaboration">Project collaboration</option>
+              <option value="Freelance / contract work">Freelance / contract work</option>
+              <option value="Career advice">Career advice</option>
+              <option value="Internship or job opportunity">Internship or job opportunity</option>
+              <option value="Technical help">Technical help</option>
+              <option value="Startup / entrepreneurship">Startup / entrepreneurship</option>
+              <option value="Feedback on my work">Feedback on my work</option>
+              <option value="Other">Other / anything else</option>
+            </select>
+          </label>
+
+          <label>
+            Subject
+            <input type="text" name="subject" placeholder="Short summary of your message" required />
+          </label>
+
+          <label>
+            Your question(s)
+            <textarea name="message" placeholder="Ask me anything — project ideas, tech stack, availability, advice, or whatever's on your mind." required></textarea>
+          </label>
+
+          <div class="submit-row">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="status" id="formStatus" role="status"></p>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <footer class="site-footer">© 2026 Booveanu Stefan. All rights reserved.</footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

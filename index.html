@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Booveanu Stefan — Software Developer from Timișoara. Class IX at Liceul Teoretic Grigore Moisil. Flutter & web apps." />
+  <title>Booveanu Stefan — Software Developer | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">S</div>
+        <span>Booveanu Stefan</span>
+      </a>
+      <ul class="nav" id="siteNav">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+        <li><a href="portfolio.html" data-page="portfolio">Works</a></li>
+        <li><a href="contact.html" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <button class="btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu">Menu</button>
+        <button class="btn" id="themeToggle" type="button">Change appearance</button>
+        <a class="btn btn-primary" href="contact.html">Let's Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="avatar">
+        <img src="assets/img/profile.png" alt="Booveanu Stefan — professional portrait" />
+      </div>
+      <div class="hero-copy">
+        <h1>Booveanu Stefan 👋</h1>
+        <p class="subtitle">Software Developer | Flutter & Web Specialist</p>
+        <p class="lead">Building practical apps that solve real problems — from salon tools and mobile assistants to educational projects and hackathon builds.</p>
+        <ul class="badges">
+          <li>🎓 Finished Class IX · Liceul Teoretic "Grigore Moisil" · Timișoara</li>
+          <li>💼 Full-stack Developer @ Cezieni SRL</li>
+          <li>🚀 HackTM — Grim Dropper</li>
+        </ul>
+        <nav class="profile-actions" aria-label="Primary actions">
+          <a class="btn" href="portfolio.html">View Projects</a>
+          <button class="btn" type="button" data-copy-email data-email-display>stefanbooveanu@gmail.com</button>
+        </nav>
+        <nav class="socials" data-socials aria-label="Social media links"></nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="year">2025 – Present</div>
+          <div>
+            <h3>Cezieni SRL</h3>
+            <p>Full-stack Developer — internal salon booking app with calendar, multi-barber views, and mobile-friendly PWA delivery.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="year">2025</div>
+          <div>
+            <h3>HackTM — Grim Dropper</h3>
+            <p>Team developer — red-teaming tool with React/Vite frontend and Python API backend.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="year">2024 – Present</div>
+          <div>
+            <h3>Independent Developer</h3>
+            <p>Freelance projects — Flutter apps, landing pages, and custom tools for clients in Timișoara.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="year">2024</div>
+          <div>
+            <h3>Educational Projects</h3>
+            <p>Interactive learning apps — biology and informatics tools for students.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">My Technical Stack</h2>
+      <div class="tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Dart</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Prisma</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">Python</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">Git</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px;">
+        <h2 class="section-title" style="margin:0;">Recent Projects</h2>
+        <a class="btn" href="portfolio.html">All Projects</a>
+      </div>
+      <div class="projects-grid">
+        <article class="card project-card">
+          <div class="project-thumb"><img src="assets/img/projects/cezieni.png" alt="Cezieni Salon App login screen" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Cezieni Salon App</h3>
+            <p>Internal booking platform for a Timișoara salon — calendar, appointments, barber roles, and 4G-friendly PWA.</p>
+            <div class="project-meta">
+              <span>Next.js</span><span>Prisma</span><span>PostgreSQL</span>
+            </div>
+            <a class="btn" href="portfolio.html#cezieni">View details</a>
+          </div>
+        </article>
+        <article class="card project-card">
+          <div class="project-thumb"><img src="assets/img/projects/daybrief.png" alt="DayBrief mobile schedule assistant preview" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>DayBrief</h3>
+            <p>Daily schedule assistant with voice commands, Firebase auth, and offline-friendly local storage.</p>
+            <div class="project-meta">
+              <span>Flutter</span><span>Firebase</span><span>Provider</span>
+            </div>
+            <a class="btn" href="portfolio.html#daybrief">View details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Core Strengths</h2>
+      <div class="strengths-grid">
+        <article class="strength-item">
+          <div class="strength-icon" aria-hidden="true">🌐</div>
+          <p>Full-Stack Web Development</p>
+        </article>
+        <article class="strength-item">
+          <div class="strength-icon" aria-hidden="true">📱</div>
+          <p>Flutter & Mobile Development</p>
+        </article>
+        <article class="strength-item">
+          <div class="strength-icon" aria-hidden="true">🛠️</div>
+          <p>Client Project Delivery</p>
+        </article>
+        <article class="strength-item">
+          <div class="strength-icon" aria-hidden="true">🎨</div>
+          <p>UI/UX Implementation</p>
+        </article>
+        <article class="strength-item">
+          <div class="strength-icon" aria-hidden="true">🗄️</div>
+          <p>Database Design & APIs</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card cta-banner">
+      <h2>Let's 👋 build something useful</h2>
+      <p>Open to freelance work, collaborations, internships, and good conversations about tech.</p>
+      <a class="btn btn-primary" href="contact.html">Let's Talk</a>
+    </section>
+
+    <footer class="site-footer">© 2026 Booveanu Stefan. All rights reserved.</footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

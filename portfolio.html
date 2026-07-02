@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio projects by Booveanu Stefan — Cezieni Salon App, DayBrief, Grim Dropper, and more." />
+  <title>Works — Booveanu Stefan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="portfolio">
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">S</div>
+        <span>Booveanu Stefan</span>
+      </a>
+      <ul class="nav" id="siteNav">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+        <li><a href="portfolio.html" data-page="portfolio">Works</a></li>
+        <li><a href="contact.html" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <button class="btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu">Menu</button>
+        <button class="btn" id="themeToggle" type="button">Change appearance</button>
+        <a class="btn btn-primary" href="contact.html">Let's Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="layout-two" style="padding-top:48px;">
+      <aside class="card profile-card">
+        <img class="profile-photo" src="assets/img/profile.png" alt="Booveanu Stefan — professional portrait" />
+        <h2>Booveanu Stefan 👋</h2>
+        <p class="role">Software Developer | Flutter & Web Specialist</p>
+        <p class="bio">From salon management tools to mobile assistants and hackathon builds — here are the projects I'm most proud of.</p>
+        <ul class="badges">
+          <li>🎓 Finished Class IX · Liceul Teoretic "Grigore Moisil" · Timișoara</li>
+          <li>💼 Full-stack Developer @ Cezieni SRL</li>
+          <li>🚀 HackTM — Grim Dropper</li>
+        </ul>
+        <nav class="profile-actions" aria-label="Primary actions">
+          <a class="btn" href="https://github.com/stefanbooveanu-debug" target="_blank" rel="noreferrer">GitHub</a>
+          <button class="btn" type="button" data-copy-email data-email-display>stefanbooveanu@gmail.com</button>
+        </nav>
+        <nav class="socials" data-socials aria-label="Social media links"></nav>
+      </aside>
+
+      <section>
+        <h1 class="section-title">Check out my latest projects</h1>
+        <p style="color:var(--text-muted);max-width:62ch;margin-bottom:28px;">From client delivery and mobile apps to educational tools and hackathon experiments — a mix of production work and learning projects.</p>
+
+        <div class="projects-grid">
+          <article class="card project-card" id="cezieni">
+            <div class="project-thumb"><img src="assets/img/projects/cezieni.png" alt="Cezieni Salon App login screen" loading="lazy" /></div>
+            <div class="project-body">
+              <h3>Cezieni Salon App</h3>
+              <p>Internal web app for Cezieni salon in Timișoara — day/week calendar, 5 barbers, appointments, client search across multiple days, and mobile-friendly PWA access.</p>
+              <div class="project-meta">
+                <span>Full-stack Developer</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Prisma</span>
+                <span>PostgreSQL</span>
+                <span>FullCalendar</span>
+              </div>
+              <a class="btn" href="contact.html">Discuss this project</a>
+            </div>
+          </article>
+
+          <article class="card project-card" id="daybrief">
+            <div class="project-thumb"><img src="assets/img/projects/daybrief.png" alt="DayBrief mobile schedule assistant preview" loading="lazy" /></div>
+            <div class="project-body">
+              <h3>DayBrief</h3>
+              <p>Flutter daily schedule assistant with voice commands, Google sign-in, Firebase backend, local SQLite storage, and text-to-speech feedback.</p>
+              <div class="project-meta">
+                <span>Mobile Developer</span>
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Firebase</span>
+                <span>Provider</span>
+              </div>
+              <a class="btn" href="https://github.com/stefanbooveanu-debug/daybrief" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="card project-card" id="grim-dropper">
+            <div class="project-thumb"><img src="assets/img/projects/grim-dropper.png" alt="Grim Dropper HackTM login screen" loading="lazy" /></div>
+            <div class="project-body">
+              <h3>Grim Dropper</h3>
+              <p>HackTM red-teaming tool with a React + Vite frontend, Python API backend, auth flows, builder UI, console, and demo game integration.</p>
+              <div class="project-meta">
+                <span>Developer</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Python</span>
+                <span>Next.js</span>
+              </div>
+              <a class="btn" href="https://github.com/stefanbooveanu-debug/grim-ripper" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="card project-card" id="amfibieni">
+            <div class="project-thumb"><img src="assets/img/projects/amfibieni.png" alt="Amfibieni educational web app homepage" loading="lazy" /></div>
+            <div class="project-body">
+              <h3>Amfibieni, Anură și Urodele</h3>
+              <p>Interactive educational web app about amphibians — content pages, styling, and a chatbot helper for learning.</p>
+              <div class="project-meta">
+                <span>Web Developer</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a class="btn" href="contact.html">Discuss this project</a>
+            </div>
+          </article>
+
+          <article class="card project-card" id="matrici">
+            <div class="project-thumb"><img src="assets/img/projects/matrici.png" alt="Matrici interactive learning site" loading="lazy" /></div>
+            <div class="project-body">
+              <h3>Matrici Învățare</h3>
+              <p>Interactive study site for 9th-grade matrix algorithms — visualizations, code examples, flashcards, and oral exam prep for informatics.</p>
+              <div class="project-meta">
+                <span>Creator</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" id="cezieni-landing">
+            <div class="project-thumb"><img src="assets/img/projects/cezieni-landing.png" alt="Cezieni salon marketing landing page" loading="lazy" /></div>
+            <div class="project-body">
+              <h3>Cezieni Landing Page</h3>
+              <p>Marketing landing page for Cezieni salon — services, pricing, location, and contact sections with a polished responsive design.</p>
+              <div class="project-meta">
+                <span>Frontend</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive UI</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="card cta-banner">
+      <h2>🚀 Building useful software · Open to freelance, internships, and collaborations 🚀</h2>
+      <a class="btn btn-primary" href="contact.html">Let's Talk</a>
+    </section>
+
+    <footer class="site-footer">© 2026 Booveanu Stefan. All rights reserved.</footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
