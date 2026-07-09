@@ -115,6 +115,16 @@ function initSocialIconButtons() {
   });
 }
 
+function initVisitorCounter() {
+  document.querySelectorAll("[data-visitor]").forEach((el) => {
+    const key = "stefan-site-visits";
+    const base = Number(localStorage.getItem(key) || 42069);
+    const count = base + 1;
+    localStorage.setItem(key, String(count));
+    el.textContent = String(count).padStart(7, "0");
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setActiveNav();
   initThemeToggle();
@@ -123,6 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initContactForm();
   initSocials();
   initSocialIconButtons();
+  initVisitorCounter();
 
   document.querySelectorAll("[data-email-display]").forEach((el) => {
     el.textContent = SITE.email;
