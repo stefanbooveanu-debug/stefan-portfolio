@@ -11,7 +11,7 @@ const SOCIAL_ICONS = {
 
 const html = document.documentElement;
 const savedTheme = localStorage.getItem("theme");
-if (savedTheme) html.setAttribute("data-theme", savedTheme);
+html.setAttribute("data-theme", savedTheme || "light");
 
 function setActiveNav() {
   const page = document.body.dataset.page;

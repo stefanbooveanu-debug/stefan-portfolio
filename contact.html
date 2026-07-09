@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <base href="/stefan-portfolio/" />
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body data-page="contact">
+  <p class="under-construction">🚧 UNDER CONSTRUCTION 🚧 (but it works kinda)</p>
   <div class="marquee-bar" aria-hidden="true"><span>★ welcome 2 my site!! ★ pls dont judge im still learning ★ made at 2am probably ★</span></div>
   <header class="site-header">
     <div class="inner">
@@ -22,7 +23,7 @@
         <div class="brand-mark">
           <img src="assets/img/profile.png" alt="" width="42" height="42" />
         </div>
-        <span>Stefan's Site!! ✨</span>
+        <span>STEFAN'S WEBSITE</span>
       </a>
       <ul class="nav" id="siteNav">
         <li><a href="index.html" data-page="home">Home</a></li>
@@ -32,8 +33,8 @@
       </ul>
       <div class="header-actions">
         <button class="btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu">Menu</button>
-        <button class="btn" id="themeToggle" type="button">🌓 mode</button>
-        <a class="btn btn-primary" href="contact.html">say hi!!</a>
+        <button class="btn" id="themeToggle" type="button">dark mode</button>
+        <a class="btn btn-primary" href="contact.html">email me</a>
       </div>
     </div>
   </header>
@@ -42,16 +43,15 @@
     <section class="layout-two" style="padding-top:48px;">
       <aside class="card profile-card">
         <img class="profile-photo" src="assets/img/profile.png" alt="Booveanu Stefan — professional portrait" />
-        <h1>hey it's Stefan 👋</h1>
-        <p class="role">15 · coder · timișoara</p>
-        <p class="bio">msg me!! projects, homework help, whatever idc</p>
+        <h1>contact me</h1>
+        <p class="role">stefan · 15 · timisoara</p>
+        <p class="bio">write me if u want. i might answer late bc school</p>
         <ul class="badges">
-          <li>🎓 class IX done → 10th grade next @ moisil</li>
-          <li>💼 coding @ cezieni</li>
-          <li>🚀 hacktm grim dropper</li>
+          <li>class 10 next year @ moisil</li>
+          <li>my email is below ↓</li>
         </ul>
         <nav class="profile-actions" aria-label="Primary actions">
-          <a class="btn" href="portfolio.html">my stuff →</a>
+          <a class="btn" href="portfolio.html">back to projects</a>
           <button class="btn" type="button" data-copy-email data-email-display>stefanbooveanu@gmail.com</button>
           <a class="btn btn-icon" href="https://github.com/stefanbooveanu-debug" target="_blank" rel="noreferrer" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A9.86 9.86 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -63,16 +63,17 @@
       </aside>
 
       <section class="card main-panel contact-panel">
-        <p class="contact-sticker">📌 u found the contact page!!</p>
-        <h2 class="section-title">msg me 📩</h2>
-        <p class="contact-intro">ok so u can either copy my email (easier) or fill this form. i'll reply when i see it — no promises on speed lol</p>
+        <h2 class="section-title">email me</h2>
+        <p class="contact-intro">i dont have one of those fancy contact systems. just copy my email or fill the form and it opens gmail or whatever u use</p>
 
         <div class="contact-quick">
-          <p><strong>email:</strong> stefanbooveanu@gmail.com</p>
-          <button class="btn btn-primary" type="button" data-copy-email>copy it 📋</button>
+          <p><b>my email:</b> stefanbooveanu@gmail.com</p>
+          <button class="btn btn-primary" type="button" data-copy-email>COPY EMAIL</button>
         </div>
 
-        <p class="contact-or">— or use this form thing —</p>
+        <hr />
+
+        <p class="contact-or">form (if u want)</p>
 
         <form id="contact-form" class="contact-form" novalidate>
           <div class="hp" aria-hidden="true">
@@ -93,10 +94,10 @@
             whats it about?
             <select name="topic" required>
               <option value="" disabled selected>pick one...</option>
-              <option value="Just saying hi">just saying hi 👋</option>
-              <option value="Work / project">work / project stuff 💼</option>
-              <option value="Random question">random question 🤔</option>
-              <option value="Other">other / idk</option>
+              <option value="Just saying hi">saying hi</option>
+              <option value="Work / project">work / project</option>
+              <option value="Random question">question</option>
+              <option value="Other">other</option>
             </select>
           </label>
 
@@ -106,12 +107,12 @@
           </label>
 
           <div class="submit-row">
-            <button class="btn btn-primary contact-send" type="submit">send it 🚀</button>
+            <button class="btn btn-primary contact-send" type="submit">SEND</button>
             <p class="status" id="formStatus" role="status"></p>
           </div>
         </form>
 
-        <p class="contact-note">⚠️ this opens ur email app btw. i dont have fancy backend yet srry</p>
+        <p class="contact-note">note: button opens ur mail app. i dont know how to make it send automatically yet</p>
       </section>
     </section>
 
