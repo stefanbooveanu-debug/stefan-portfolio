@@ -5,32 +5,72 @@
   <base href="/stefan-portfolio/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>about - stefan</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body bgcolor="#cce5ff">
-  <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
-  <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
+<body>
+  <div class="wrap">
+    <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
+    <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
 
-  <h1>STEFAN'S WEBSITE</h1>
-  <p>
-    <a href="index.html">home</a> |
-    <b>about</b> |
-    <a href="portfolio.html">projects</a> |
-    <a href="contact.html">contact</a>
-  </p>
-  <hr />
+    <header class="header-box">
+      <h1>STEFAN'S WEBSITE</h1>
+      <nav>
+        <a href="index.html">home</a>
+        <b>about</b>
+        <a href="portfolio.html">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
 
-  <img src="assets/img/profile.png" alt="me" width="90" />
-  <h2>about me</h2>
-  <p>im stefan. 15. from timisoara romania 🇷🇴</p>
-  <p>finished class 9 → starting class 10 at liceul grigore moisil (informatics).</p>
-  <p>i code in flutter, html, css, js. sometimes next.js when i feel fancy.</p>
-  <p>work on <b>SalonFloow</b> @ cezieni. did hacktm with grim dropper team.</p>
+    <section class="box">
+      <div class="hero">
+        <img src="assets/img/profile.png" alt="me" width="100" height="100" />
+        <div>
+          <h2 style="margin-top:0;border:none;padding:0;">about me</h2>
+          <p>im stefan. 15. from timisoara romania 🇷🇴</p>
+          <p>finished class 9 → starting class 10 at liceul grigore moisil (informatics).</p>
+        </div>
+      </div>
+    </section>
 
-  <p><a href="contact.html">wanna talk? click here</a></p>
-  <p><a href="index.html">&lt;&lt; back home</a></p>
+    <section class="box">
+      <h2>what i do</h2>
+      <p>i code apps and websites. mostly flutter for mobile, html/css/js for web.</p>
+      <p>sometimes i try next.js when i feel fancy lol.</p>
+      <p>
+        <span class="tag">flutter</span>
+        <span class="tag">dart</span>
+        <span class="tag">html</span>
+        <span class="tag">css</span>
+        <span class="tag">javascript</span>
+        <span class="tag">c++</span>
+      </p>
+    </section>
 
-  <p class="footer">visitor #<span data-visitor>00000</span></p>
+    <section class="box">
+      <h2>experience</h2>
+      <p><b>SalonFloow</b> — working on salon app @ cezieni (calendar + appointments)</p>
+      <p><b>Grim Dropper</b> — hacktm hackathon, red team project</p>
+      <p><b>School projects</b> — matrici c++, amfibieni biology site, etc.</p>
+    </section>
+
+    <section class="box">
+      <h2>school</h2>
+      <p>Liceul Teoretic "Grigore Moisil" — informatics</p>
+      <p>timisoara, romania</p>
+    </section>
+
+    <p style="text-align:center;">
+      <a class="btn" href="contact.html">wanna talk? contact me</a>
+      <a class="btn" href="index.html">&lt;&lt; back home</a>
+    </p>
+
+    <footer class="footer">
+      visitor #<span data-visitor>00000</span> <span class="blink">★</span>
+    </footer>
+  </div>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

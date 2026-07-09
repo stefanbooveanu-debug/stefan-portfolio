@@ -5,29 +5,53 @@
   <base href="/stefan-portfolio/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>contact - stefan</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body bgcolor="#cce5ff">
-  <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
-  <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
+<body>
+  <div class="wrap">
+    <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
+    <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
 
-  <h1>STEFAN'S WEBSITE</h1>
-  <p>
-    <a href="index.html">home</a> |
-    <a href="about.html">about</a> |
-    <a href="portfolio.html">projects</a> |
-    <b>contact</b>
-  </p>
-  <hr />
+    <header class="header-box">
+      <h1>STEFAN'S WEBSITE</h1>
+      <nav>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">projects</a>
+        <b>contact</b>
+      </nav>
+    </header>
 
-  <h2>contact me</h2>
-  <p>easiest way — just email me:</p>
-  <p><a href="mailto:stefanbooveanu@gmail.com"><b>stefanbooveanu@gmail.com</b></a></p>
-  <p><i>(click it and ur mail app opens)</i></p>
+    <section class="box">
+      <h2>contact me</h2>
+      <p>easiest way — email me directly:</p>
+      <p><a href="mailto:stefanbooveanu@gmail.com"><b>stefanbooveanu@gmail.com</b></a></p>
+      <button class="btn" type="button" data-copy-email>copy email</button>
+    </section>
 
-  <p><a href="index.html">&lt;&lt; back home</a></p>
+    <section class="box">
+      <h2>or send a message</h2>
+      <p><i>(opens ur mail app — i dont have a backend lol)</i></p>
 
-  <p class="footer">visitor #<span data-visitor>00000</span></p>
+      <form id="contact-form" novalidate>
+        <div class="hp"><input type="text" name="company" tabindex="-1" autocomplete="off" /></div>
+        <label>ur name:</label>
+        <input type="text" name="name" required />
+        <label>ur message:</label>
+        <textarea name="message" rows="5" required></textarea>
+        <button class="btn" type="submit">send message</button>
+        <p class="status" id="formStatus"></p>
+      </form>
+    </section>
+
+    <p style="text-align:center;"><a class="btn" href="index.html">&lt;&lt; back home</a></p>
+
+    <footer class="footer">
+      visitor #<span data-visitor>00000</span> <span class="blink">★</span>
+    </footer>
+  </div>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

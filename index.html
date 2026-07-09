@@ -5,44 +5,78 @@
   <base href="/stefan-portfolio/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>stefan's website</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body bgcolor="#cce5ff">
-  <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
-  <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★ made at 2am probably ★</marquee>
+<body>
+  <div class="wrap">
+    <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
+    <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★ made at 2am probably ★</marquee>
 
-  <h1>STEFAN'S WEBSITE</h1>
-  <p>
-    <b>home</b> |
-    <a href="about.html">about</a> |
-    <a href="portfolio.html">projects</a> |
-    <a href="contact.html">contact</a>
-  </p>
-  <hr />
+    <header class="header-box">
+      <h1>STEFAN'S WEBSITE</h1>
+      <nav>
+        <b>home</b>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
 
-  <img src="assets/img/profile.png" alt="me" width="110" />
-  <p><b>hey im stefan</b> 👋</p>
-  <p>15 years old · class 10 @ liceul grigore moisil timisoara</p>
-  <p>i make apps (flutter + websites). this site is just html lol.</p>
+    <section class="box">
+      <div class="hero">
+        <img src="assets/img/profile.png" alt="me" width="120" height="120" />
+        <div>
+          <h2 style="margin-top:0;border:none;padding:0;">hey im stefan 👋</h2>
+          <p>15 years old · starting class 10 @ liceul grigore moisil timisoara</p>
+          <p>i make apps — mostly flutter and websites. this site is html+css lol.</p>
+          <p>
+            <span class="tag">flutter</span>
+            <span class="tag">html/css</span>
+            <span class="tag">js</span>
+            <span class="tag">next.js sometimes</span>
+          </p>
+          <div class="socials">
+            <a class="btn" href="mailto:stefanbooveanu@gmail.com">📧 email me</a>
+            <a class="btn" href="https://github.com/stefanbooveanu-debug" target="_blank" rel="noreferrer">💻 github</a>
+            <a class="btn" href="https://www.linkedin.com/in/stefan-booveanu-4a316a328/" target="_blank" rel="noreferrer">🔗 linkedin</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <p>📧 <a href="mailto:stefanbooveanu@gmail.com">stefanbooveanu@gmail.com</a></p>
-  <p>💻 <a href="https://github.com/stefanbooveanu-debug">github</a></p>
-  <p>🔗 <a href="https://www.linkedin.com/in/stefan-booveanu-4a316a328/">linkedin</a></p>
+    <section class="box">
+      <h2>my projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="portfolio.html#salonfloow" style="text-decoration:none;color:inherit;">
+          <img src="assets/img/projects/salonfloow.png" alt="SalonFloow" />
+          <h3>SalonFloow</h3>
+          <p>salon calendar app (work)</p>
+        </a>
+        <a class="project-card" href="portfolio.html#grim-dropper" style="text-decoration:none;color:inherit;">
+          <img src="assets/img/projects/grim-dropper.png" alt="Grim Dropper" />
+          <h3>Grim Dropper</h3>
+          <p>hacktm project</p>
+        </a>
+        <a class="project-card" href="portfolio.html#matrici" style="text-decoration:none;color:inherit;">
+          <img src="assets/img/projects/matrici.png" alt="Matrici C++" />
+          <h3>Matrici C++</h3>
+          <p>school study site</p>
+        </a>
+        <a class="project-card" href="portfolio.html#daybrief" style="text-decoration:none;color:inherit;">
+          <img src="assets/img/projects/daybrief.png" alt="DayBrief" />
+          <h3>DayBrief</h3>
+          <p>flutter schedule app</p>
+        </a>
+      </div>
+      <p style="margin-top:12px;text-align:center;"><a class="btn" href="portfolio.html">see all projects &gt;&gt;</a></p>
+    </section>
 
-  <h2>my projects</h2>
-  <ul>
-    <li><a href="portfolio.html#salonfloow">SalonFloow</a> — salon app</li>
-    <li><a href="portfolio.html#grim-dropper">Grim Dropper</a> — hacktm</li>
-    <li><a href="portfolio.html#matrici">Matrici C++</a> — school</li>
-    <li><a href="portfolio.html#daybrief">DayBrief</a> — flutter app</li>
-  </ul>
-  <p><a href="portfolio.html"><b>see all projects &gt;&gt;</b></a></p>
-
-  <hr />
-  <p class="footer">
-    made by me · july 2026 · best viewed on chrome<br />
-    u are visitor #<span data-visitor>00000</span> <span class="blink">★</span>
-  </p>
+    <footer class="footer">
+      made by me · july 2026 · best viewed on chrome<br />
+      u are visitor #<span data-visitor>00000</span> <span class="blink">★</span>
+    </footer>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
