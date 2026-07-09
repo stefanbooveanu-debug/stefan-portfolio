@@ -10,11 +10,15 @@
 </head>
 <body>
   <div class="wrap">
-    <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
-    <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
+    <p class="construction" data-construction>⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
+    <div class="marquee-row">
+      <marquee class="marquee-top" scrollamount="5">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
+      <marquee class="marquee-bottom" direction="right" scrollamount="3">📧 hit me up 📧 i reply sometimes 📧</marquee>
+    </div>
 
     <header class="header-box">
-      <h1>STEFAN'S WEBSITE</h1>
+      <span class="online-badge">● ONLINE NOW</span>
+      <h1 class="rainbow-title">STEFAN'S WEBSITE</h1>
       <nav>
         <a href="index.html">home</a>
         <a href="about.html">about</a>
@@ -27,7 +31,7 @@
       <h2>contact me</h2>
       <p>easiest way — email me directly:</p>
       <p><a href="mailto:stefanbooveanu@gmail.com"><b>stefanbooveanu@gmail.com</b></a></p>
-      <button class="btn" type="button" data-copy-email>copy email</button>
+      <button class="btn btn-hot" type="button" data-copy-email>copy email 📋</button>
     </section>
 
     <section class="box">
@@ -40,7 +44,7 @@
         <input type="text" name="name" required />
         <label>ur message:</label>
         <textarea name="message" rows="5" required></textarea>
-        <button class="btn" type="submit">send message</button>
+        <button class="btn btn-hot" type="submit">send message 🚀</button>
         <p class="status" id="formStatus"></p>
       </form>
     </section>
@@ -48,7 +52,7 @@
     <p style="text-align:center;"><a class="btn" href="index.html">&lt;&lt; back home</a></p>
 
     <footer class="footer">
-      visitor #<span data-visitor>00000</span> <span class="blink">★</span>
+      visitor #<span class="visitor-num" data-visitor>00000</span> <span class="blink">★</span>
     </footer>
   </div>
 

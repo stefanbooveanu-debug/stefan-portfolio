@@ -4,17 +4,21 @@
   <meta charset="UTF-8" />
   <base href="/stefan-portfolio/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>stefan's website</title>
+  <title>stefan's website 🔥</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <div class="wrap">
-    <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
-    <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★ made at 2am probably ★</marquee>
+    <p class="construction" data-construction>⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
+    <div class="marquee-row">
+      <marquee class="marquee-top" scrollamount="5">★ welcome 2 my site ★ pls dont judge im still learning ★ made at 2am probably ★ click anywhere for sparkles ★</marquee>
+      <marquee class="marquee-bottom" direction="right" scrollamount="3">🔥 stefan was here 🔥 class 10 @ moisil 🔥 flutter dev 🔥 hacktm survivor 🔥</marquee>
+    </div>
 
     <header class="header-box">
-      <h1>STEFAN'S WEBSITE</h1>
+      <span class="online-badge">● ONLINE NOW</span>
+      <h1 class="rainbow-title">STEFAN'S WEBSITE</h1>
       <nav>
         <b>home</b>
         <a href="about.html">about</a>
@@ -23,9 +27,17 @@
       </nav>
     </header>
 
+    <div class="stats">
+      <div class="stat"><span class="stat-num">15</span><span class="stat-label">years old</span></div>
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">projects</span></div>
+      <div class="stat"><span class="stat-num">X</span><span class="stat-label">class grade</span></div>
+    </div>
+
     <section class="box">
       <div class="hero">
-        <img src="assets/img/profile.png" alt="me" width="120" height="120" />
+        <div class="profile-wrap">
+          <img src="assets/img/profile.png" alt="me" width="120" height="120" />
+        </div>
         <div>
           <h2 style="margin-top:0;border:none;padding:0;">hey im stefan 👋</h2>
           <p>15 years old · starting class 10 @ liceul grigore moisil timisoara</p>
@@ -37,7 +49,7 @@
             <span class="tag">next.js sometimes</span>
           </p>
           <div class="socials">
-            <a class="btn" href="mailto:stefanbooveanu@gmail.com">📧 email me</a>
+            <a class="btn btn-hot" href="mailto:stefanbooveanu@gmail.com">📧 email me</a>
             <a class="btn" href="https://github.com/stefanbooveanu-debug" target="_blank" rel="noreferrer">💻 github</a>
             <a class="btn" href="https://www.linkedin.com/in/stefan-booveanu-4a316a328/" target="_blank" rel="noreferrer">🔗 linkedin</a>
           </div>
@@ -45,15 +57,19 @@
       </div>
     </section>
 
+    <p class="star-divider">★ ★ ★ ★ ★</p>
+
     <section class="box">
-      <h2>my projects</h2>
+      <h2>my projects 🔥</h2>
       <div class="project-grid">
         <a class="project-card" href="portfolio.html#salonfloow" style="text-decoration:none;color:inherit;">
+          <span class="badge-new">HOT</span>
           <img src="assets/img/projects/salonfloow.png" alt="SalonFloow" />
           <h3>SalonFloow</h3>
           <p>salon calendar app (work)</p>
         </a>
         <a class="project-card" href="portfolio.html#grim-dropper" style="text-decoration:none;color:inherit;">
+          <span class="badge-new">NEW</span>
           <img src="assets/img/projects/grim-dropper.png" alt="Grim Dropper" />
           <h3>Grim Dropper</h3>
           <p>hacktm project</p>
@@ -69,12 +85,12 @@
           <p>flutter schedule app</p>
         </a>
       </div>
-      <p style="margin-top:12px;text-align:center;"><a class="btn" href="portfolio.html">see all projects &gt;&gt;</a></p>
+      <p style="margin-top:12px;text-align:center;"><a class="btn btn-hot" href="portfolio.html">see all projects &gt;&gt;</a></p>
     </section>
 
     <footer class="footer">
-      made by me · july 2026 · best viewed on chrome<br />
-      u are visitor #<span data-visitor>00000</span> <span class="blink">★</span>
+      made by me · july 2026 · best viewed on chrome · IE users go away<br />
+      u are visitor #<span class="visitor-num" data-visitor>00000</span> <span class="blink">★</span>
     </footer>
   </div>
 

@@ -10,11 +10,15 @@
 </head>
 <body>
   <div class="wrap">
-    <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
-    <marquee scrollamount="4">★ check out my projects ★ some are actually ok ★</marquee>
+    <p class="construction" data-construction>⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
+    <div class="marquee-row">
+      <marquee class="marquee-top" scrollamount="5">★ check out my projects ★ some are actually ok ★</marquee>
+      <marquee class="marquee-bottom" direction="right" scrollamount="3">💻 flutter 💻 hacktm 💻 school stuff 💻</marquee>
+    </div>
 
     <header class="header-box">
-      <h1>STEFAN'S WEBSITE</h1>
+      <span class="online-badge">● ONLINE NOW</span>
+      <h1 class="rainbow-title">STEFAN'S WEBSITE</h1>
       <nav>
         <a href="index.html">home</a>
         <a href="about.html">about</a>
@@ -29,6 +33,7 @@
     </section>
 
     <div class="project-block" id="salonfloow">
+      <span class="badge-new">HOT</span>
       <h2 style="color:#ff0000;margin-top:0;">SalonFloow</h2>
       <img src="assets/img/projects/salonfloow.png" alt="salonfloow" width="500" />
       <p>salon calendar app for work @ cezieni. appointments + scheduling.</p>
@@ -36,6 +41,7 @@
     </div>
 
     <div class="project-block" id="grim-dropper">
+      <span class="badge-new">NEW</span>
       <h2 style="color:#ff0000;margin-top:0;">Grim Dropper</h2>
       <img src="assets/img/projects/grim-dropper.png" alt="grim dropper" width="500" />
       <p>hacktm hackathon project. red team stuff.</p>
@@ -68,7 +74,7 @@
     <p style="text-align:center;"><a class="btn" href="index.html">&lt;&lt; back home</a></p>
 
     <footer class="footer">
-      visitor #<span data-visitor>00000</span> <span class="blink">★</span>
+      visitor #<span class="visitor-num" data-visitor>00000</span> <span class="blink">★</span>
     </footer>
   </div>
 

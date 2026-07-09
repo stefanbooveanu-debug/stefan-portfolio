@@ -10,11 +10,15 @@
 </head>
 <body>
   <div class="wrap">
-    <p class="construction">⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
-    <marquee scrollamount="4">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
+    <p class="construction" data-construction>⚠ UNDER CONSTRUCTION ⚠ (but it works lol)</p>
+    <div class="marquee-row">
+      <marquee class="marquee-top" scrollamount="5">★ welcome 2 my site ★ pls dont judge im still learning ★</marquee>
+      <marquee class="marquee-bottom" direction="right" scrollamount="3">🔥 about stefan 🔥 15yo dev from timisoara 🔥</marquee>
+    </div>
 
     <header class="header-box">
-      <h1>STEFAN'S WEBSITE</h1>
+      <span class="online-badge">● ONLINE NOW</span>
+      <h1 class="rainbow-title">STEFAN'S WEBSITE</h1>
       <nav>
         <a href="index.html">home</a>
         <b>about</b>
@@ -25,7 +29,9 @@
 
     <section class="box">
       <div class="hero">
-        <img src="assets/img/profile.png" alt="me" width="100" height="100" />
+        <div class="profile-wrap">
+          <img src="assets/img/profile.png" alt="me" width="100" height="100" />
+        </div>
         <div>
           <h2 style="margin-top:0;border:none;padding:0;">about me</h2>
           <p>im stefan. 15. from timisoara romania 🇷🇴</p>
@@ -62,12 +68,12 @@
     </section>
 
     <p style="text-align:center;">
-      <a class="btn" href="contact.html">wanna talk? contact me</a>
+      <a class="btn btn-hot" href="contact.html">wanna talk? contact me</a>
       <a class="btn" href="index.html">&lt;&lt; back home</a>
     </p>
 
     <footer class="footer">
-      visitor #<span data-visitor>00000</span> <span class="blink">★</span>
+      visitor #<span class="visitor-num" data-visitor>00000</span> <span class="blink">★</span>
     </footer>
   </div>
 
