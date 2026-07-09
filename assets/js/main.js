@@ -70,18 +70,17 @@ function initContactForm() {
     const name = String(data.get("name") || "").trim();
     const email = String(data.get("email") || "").trim();
     const topic = String(data.get("topic") || "").trim();
-    const subject = String(data.get("subject") || "").trim();
     const message = String(data.get("message") || "").trim();
 
-    if (!name || !email || !topic || !subject || !message) {
-      status.textContent = "Please fill in all fields.";
+    if (!name || !email || !topic || !message) {
+      status.textContent = "yo fill everything in pls 😭";
       status.className = "status error";
       return;
     }
 
-    const body = [`Topic: ${topic}`, "", message, "", `— ${name}`, email].join("\n");
-    window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(`[${topic}] ${subject}`)}&body=${encodeURIComponent(body)}`;
-    status.textContent = "Opening your email app…";
+    const body = [`about: ${topic}`, "", message, "", `— ${name}`, email].join("\n");
+    window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(`${topic} from ${name}`)}&body=${encodeURIComponent(body)}`;
+    status.textContent = "opening ur email app... 🤞";
     status.className = "status success";
   });
 }

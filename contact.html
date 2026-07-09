@@ -44,7 +44,7 @@
         <img class="profile-photo" src="assets/img/profile.png" alt="Booveanu Stefan — professional portrait" />
         <h1>hey it's Stefan 👋</h1>
         <p class="role">15 · coder · timișoara</p>
-        <p class="bio">hit me up if u wanna talk projects, freelance, or whatever. i check email... sometimes</p>
+        <p class="bio">msg me!! projects, homework help, whatever idc</p>
         <ul class="badges">
           <li>🎓 class IX done → 10th grade next @ moisil</li>
           <li>💼 coding @ cezieni</li>
@@ -62,62 +62,56 @@
         </nav>
       </aside>
 
-      <section class="card main-panel">
-        <h2 class="section-title">send me a msg 📩</h2>
-        <p style="color:var(--text-muted);max-width:58ch;margin-bottom:22px;">collab? freelance? internship? random question? fill the form or just copy my email. thx 🙏</p>
+      <section class="card main-panel contact-panel">
+        <p class="contact-sticker">📌 u found the contact page!!</p>
+        <h2 class="section-title">msg me 📩</h2>
+        <p class="contact-intro">ok so u can either copy my email (easier) or fill this form. i'll reply when i see it — no promises on speed lol</p>
 
-        <div class="inline-actions">
-          <button class="btn btn-primary" type="button" data-copy-email>copy email 📋</button>
-          <a class="btn" href="portfolio.html">see projects</a>
+        <div class="contact-quick">
+          <p><strong>email:</strong> stefanbooveanu@gmail.com</p>
+          <button class="btn btn-primary" type="button" data-copy-email>copy it 📋</button>
         </div>
 
-        <form id="contact-form" style="margin-top:28px;" novalidate>
-          <div class="hp" aria-hidden="true">
-            <label>Don't fill this out if you're human<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
-          </div>
+        <p class="contact-or">— or use this form thing —</p>
 
-          <div class="row">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Enter your name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="Enter your email" required />
-            </label>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label>bot trap<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
           </div>
 
           <label>
-            What would you like to ask about?
+            ur name
+            <input type="text" name="name" placeholder="what do i call u" required />
+          </label>
+
+          <label>
+            ur email
+            <input type="email" name="email" placeholder="so i can write back" required />
+          </label>
+
+          <label>
+            whats it about?
             <select name="topic" required>
-              <option value="" disabled selected>Select a topic…</option>
-              <option value="General question">General question</option>
-              <option value="Project collaboration">Project collaboration</option>
-              <option value="Freelance / contract work">Freelance / contract work</option>
-              <option value="Career advice">Career advice</option>
-              <option value="Internship or job opportunity">Internship or job opportunity</option>
-              <option value="Technical help">Technical help</option>
-              <option value="Startup / entrepreneurship">Startup / entrepreneurship</option>
-              <option value="Feedback on my work">Feedback on my work</option>
-              <option value="Other">Other / anything else</option>
+              <option value="" disabled selected>pick one...</option>
+              <option value="Just saying hi">just saying hi 👋</option>
+              <option value="Work / project">work / project stuff 💼</option>
+              <option value="Random question">random question 🤔</option>
+              <option value="Other">other / idk</option>
             </select>
           </label>
 
           <label>
-            Subject
-            <input type="text" name="subject" placeholder="Short summary of your message" required />
-          </label>
-
-          <label>
-            Your question(s)
-            <textarea name="message" placeholder="Ask me anything — project ideas, tech stack, availability, advice, or whatever's on your mind." required></textarea>
+            ur message
+            <textarea name="message" placeholder="type whatever here..." required></textarea>
           </label>
 
           <div class="submit-row">
-            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-primary contact-send" type="submit">send it 🚀</button>
             <p class="status" id="formStatus" role="status"></p>
           </div>
         </form>
+
+        <p class="contact-note">⚠️ this opens ur email app btw. i dont have fancy backend yet srry</p>
       </section>
     </section>
 

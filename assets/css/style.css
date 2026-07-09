@@ -810,6 +810,103 @@ textarea {
   font-size: 0.9rem;
 }
 
+.contact-panel {
+  transform: rotate(0.8deg);
+  background: linear-gradient(180deg, #fff9c4 0%, #fffdf8 35%, var(--bg-card) 35%);
+  position: relative;
+  overflow: visible;
+}
+
+[data-theme="dark"] .contact-panel {
+  background: linear-gradient(180deg, #3d3520 0%, #241538 35%, #241538 100%);
+}
+
+.contact-sticker {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  margin-bottom: 12px;
+  background: var(--accent-2);
+  border: 3px solid var(--border);
+  box-shadow: 3px 3px 0 var(--border);
+  transform: rotate(-2deg);
+}
+
+.contact-intro {
+  color: var(--text-muted);
+  max-width: 52ch;
+  margin-bottom: 18px;
+  font-size: 1.02rem;
+}
+
+.contact-quick {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  background: #eaffc2;
+  border: 3px dashed var(--border);
+  border-radius: 12px;
+  transform: rotate(-0.5deg);
+}
+
+[data-theme="dark"] .contact-quick {
+  background: #2a3d1a;
+  color: #e8ffc8;
+}
+
+.contact-quick p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.contact-or {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 16px 0 20px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 3px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 var(--border);
+}
+
+[data-theme="dark"] .contact-form {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-send {
+  font-size: 1rem;
+  transform: rotate(-1deg);
+}
+
+.contact-send:hover {
+  transform: rotate(1deg) translate(-2px, -2px);
+}
+
+.contact-note {
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 10px 12px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 10px 10px 0;
+}
+
 [data-theme="dark"] {
   --text: #f5f0ff;
   --text-muted: #c8b8e8;
