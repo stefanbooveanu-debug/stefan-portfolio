@@ -1,1 +1,69 @@
-/* unused - site is plain html now */
+body {
+  font-family: "Comic Sans MS", "Comic Neue", cursive;
+  background: #cce5ff;
+  color: #000;
+  margin: 15px;
+  line-height: 1.4;
+}
+
+a { color: #0000ee; }
+a:visited { color: #551a8b; }
+
+img { border: 2px solid #000; }
+
+h1 { color: #ff0000; font-size: 24px; }
+h2 { color: #ff0000; font-size: 18px; margin-top: 20px; }
+
+hr { border: 2px dashed #000; margin: 15px 0; }
+
+.construction {
+  background: #ffff00;
+  color: #ff0000;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #000;
+}
+
+nav { margin: 10px 0; }
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+input, textarea, select {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 4px;
+  border: 2px inset #999;
+}
+
+button, .btn {
+  padding: 4px 10px;
+  border: 2px outset #ccc;
+  background: #ddd;
+  cursor: pointer;
+}
+
+button:active { border-style: inset; }
+
+.footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #333;
+}
+
+.status { font-weight: bold; margin-top: 8px; }
+.status.error { color: red; }
+.status.success { color: green; }
+
+.hp { display: none; }
+
+.project-img {
+  max-width: 100%;
+  margin: 8px 0;
+  border: 2px solid #000;
+}
